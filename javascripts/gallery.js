@@ -1,4 +1,4 @@
-$(function() {
+(function() {
   var state = {
     imagesQuantity: $('.galleryRail img').length,
     currentImage: 0,
