@@ -17,6 +17,22 @@
 
     <link rel="stylesheet" href="stylesheets/import.css">
 
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.mousewheel.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+
+     $("section").mousewheel(function(event, delta) {
+
+        this.scrollLeft -= (delta * 30);
+
+        event.preventDefault();
+
+     });
+
+    });
+    </script>
+
   </head>
   <body>
 
