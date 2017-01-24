@@ -32,6 +32,7 @@ p {
   display: block;
   position: relative;
   margin: 20px 25px 20px 90px;
+  line-height: 30px;
   text-align: left;
 }
 
