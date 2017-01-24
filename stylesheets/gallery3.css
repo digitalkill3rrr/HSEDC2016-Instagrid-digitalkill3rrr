@@ -8,11 +8,31 @@ body {
   min-width: 996px;
   height: 100vh;
   background-color: black;
+  font-family: 'PT Sans', sans-serif;
 }
 
-a {
+a,
+p {
   color: white;
   text-decoration: none;
+}
+
+a.change {
+-webkit-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+
+a.change:hover {
+color: #87CEFA;
+}
+
+p {
+  display: block;
+  position: relative;
+  margin: 20px 25px 20px 90px;
+  text-align: left;
 }
 
 .menubar {
@@ -62,6 +82,48 @@ div.social {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+ul.dropdown-inside {
+  list-style-type: none;
+  padding: 0;
+ }
+
+ul.dropdown-inside {
+  position: absolute;
+  left: -9999px;
+ }
+
+li.dropdown {
+  display: inline;
+  float: left;
+  margin: 0 1px 0 0;
+ }
+
+li.dropdown-top p {
+  padding: 0 10px 0 4px;
+  display: block;
+ }
+
+p.dropdown {
+  background: #efefef;
+}
+
+p.dropdown:hover {
+  padding: 2px 10px 0 5px;
+}
+
+li.dropdown:hover .dropdown-inside {
+  display: block;
+  left: 0;
+ }
+
+.dropdown-inside {
+  background: black;
+}
+
+.dropdown-inside a:hover {
+  background: #efefef;
 }
 
 .galleryWrapper {
