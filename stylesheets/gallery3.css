@@ -3,8 +3,7 @@
 }
 
 body {
-  margin: 0;
-  width: 100vw;
+  width: 100%;
   min-width: 996px;
   height: 100vh;
   background-color: black;
@@ -42,7 +41,7 @@ p {
   min-width: 996px;
   left: 0;
   top: 0;
-  padding: 10px;
+  padding: 20px;
   background-color: black;
   opacity: .8;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
@@ -121,6 +120,7 @@ li.dropdown:hover .dropdown-inside {
 
 .dropdown-inside {
   background: black;
+  margin: 20px;
 }
 
 .dropdown-inside a:hover {
@@ -133,7 +133,6 @@ li.dropdown:hover .dropdown-inside {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   height: 100%;
   width: 100%;
   -webkit-transform: scale(0.90);
