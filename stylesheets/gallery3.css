@@ -134,6 +134,7 @@ li.dropdown:hover .dropdown-inside {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  position: relative;
   height: 100%;
   width: 100%;
   -webkit-transform: scale(0.90);
@@ -170,7 +171,8 @@ div {
   flex-direction: row;
 }
 
-div.big {
+div.big,
+div.b {
   width: 100vh;
   height: 100vh;
 }
@@ -185,10 +187,13 @@ div.big {
   flex-direction: column;
 }
 
-div.small {
+div.small,
+div.sm {
   width: 50vh;
   height: 50vh;
 }
+
+/*большая картинка*/
 
 .page #im1 {
   background-image: url(../images/image1.png);
@@ -202,6 +207,16 @@ div.small {
   background-image: url(../images/image3.jpg);
 }
 
+.page #im4 {
+  background-image: url(../images/image4.png);
+}
+
+.page #im5 {
+  background-image: url(../images/image5.png);
+}
+
+/*верхняя маленькая картинка*/
+
 .small #im1u {
   background-image: url(../images/image1_2.png);
 }
@@ -214,6 +229,16 @@ div.small {
   background-image: url(../images/image3_2.jpg);
 }
 
+.small #im4u {
+  background-image: url(../images/image4_2.png);
+}
+
+.small #im5u {
+  background-image: url(../images/image5_2.png);
+}
+
+/*нижняя маленькая картинка*/
+
 .small #im1d {
   background-image: url(../images/image1_3.png);
 }
@@ -224,6 +249,14 @@ div.small {
 
 .small #im3d {
   background-image: url(../images/image3_3.jpg);
+}
+
+.small #im4d {
+  background-image: url(../images/image4_3.png);
+}
+
+.small #im5d {
+  background-image: url(../images/image5_3.png);
 }
 
 #slider {
@@ -277,3 +310,17 @@ div.small {
     right: 0;
     opacity: .3;
 }
+
+div.b,
+div.sm {
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+}
+
+div.b:hover,
+div.sm:hover {
+  opacity: .4;
+}
+
+/* NOTE: Доделать hover info при наведении на картинку */
